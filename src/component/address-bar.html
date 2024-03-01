@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Address Bar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            -webkit-app-region: drag;
+        }
+
+        .address-bar {
+            width: 100vw;
+            height: 3.7vh;
+            min-height: 20px;
+            background-color: #3b3b3b;
+            display: flex;
+            padding-top: 2px;
+        }
+
+        .address-bar input {
+            flex-grow: 1;
+            width: 90%;
+            min-width: 30%;
+            height: 2.5vh;
+            min-height: 15px;
+            margin-right: 0.1vw;
+            border: none;
+            border-radius: 4px;
+            background-color: #2b2b2b;
+            color: antiquewhite;
+            -webkit-app-region: no-drag;
+        }
+
+        .address-bar button {
+            height: 3vh;
+            min-height: 15px;
+            border: none;
+            border-radius: 4px;
+            background-color: #3b3b3b;
+            color: transparent;
+            -webkit-app-region: no-drag;
+        }
+
+        .address-bar button:hover {
+            background-color: #4a4a4a;
+            color: #fff;
+            -webkit-app-region: drag;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+
+    <div class="address-bar">
+        <button id="backward-button" class="button" title="backward (ctrl+backspace)">
+            <svg t="1709186893983" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="4225" data-darkreader-inline-fill="" width="18" height="10">
+                <path
+                    d="M959.296 455.808H276.928l320.64-313.152-78.656-77.568-452.928 446.656 453.824 446.976 77.184-76.864L277.12 564.096h682.176V455.808z"
+                    fill="#ffffff" p-id="4226" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #181a1b;"
+                    data-spm-anchor-id="a313x.search_index.0.i5.57913a81gO2ZKr"></path>
+            </svg>
+        </button>
+        <button id="reload-button" class="button" title="reload (ctrl+R)">
+            <svg t="1709187418643" class="icon" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="6693" data-darkreader-inline-fill="" width="18" height="10">
+                <path
+                    d="M914.17946 324.34283C854.308387 324.325508 750.895846 324.317788 750.895846 324.317788 732.045471 324.317788 716.764213 339.599801 716.764213 358.451121 716.764213 377.30244 732.045471 392.584453 750.895846 392.584453L955.787864 392.584453C993.448095 392.584453 1024 362.040424 1024 324.368908L1024 119.466667C1024 100.615347 1008.718742 85.333333 989.868367 85.333333 971.017993 85.333333 955.736735 100.615347 955.736735 119.466667L955.736735 256.497996C933.314348 217.628194 905.827487 181.795372 873.995034 149.961328 778.623011 54.584531 649.577119 0 511.974435 0 229.218763 0 0 229.230209 0 512 0 794.769791 229.218763 1024 511.974435 1024 794.730125 1024 1023.948888 794.769791 1023.948888 512 1023.948888 493.148681 1008.66763 477.866667 989.817256 477.866667 970.966881 477.866667 955.685623 493.148681 955.685623 512 955.685623 757.067153 757.029358 955.733333 511.974435 955.733333 266.91953 955.733333 68.263265 757.067153 68.263265 512 68.263265 266.932847 266.91953 68.266667 511.974435 68.266667 631.286484 68.266667 743.028524 115.531923 825.725634 198.233152 862.329644 234.839003 892.298522 277.528256 914.17946 324.34283L914.17946 324.34283Z"
+                    fill="#ffffff" p-id="6694" data-darkreader-inline-fill=""
+                    style="--darkreader-inline-fill: #181a1b;"></path>
+            </svg>
+        </button>
+        <button id="forward-button" class="button" title="forward (ctrl+enter)">
+            <svg t="1709187238351" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="5677" data-darkreader-inline-fill="" width="18" height="10">
+                <path
+                    d="M64.704 455.808h682.368L426.496 142.656l78.592-77.568 452.928 446.656-453.824 446.976-77.184-76.864 319.872-317.76H64.704V455.808z"
+                    fill="#ffffff" p-id="5678" data-darkreader-inline-fill=""
+                    style="--darkreader-inline-fill: #181a1b;"></path>
+            </svg>
+        </button>
+        <input type="text" id="address-input" placeholder="Enter URL" />
+        <button id="load-button" title="go">
+            <svg t="1709187588538" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                p-id="7767" data-darkreader-inline-fill="" width="18" height="10">
+                <path d="M256.079818 160.365384 256.079818 863.633592 808.649815 511.983627Z" p-id="7768" fill="#ffffff"
+                    data-darkreader-inline-fill="" style="--darkreader-inline-fill: #181a1b;"></path>
+            </svg>
+        </button>
+    </div>
+    <script src="../renderer.js"></script>
+</body>
+
+</html>
