@@ -1,4 +1,10 @@
 
+# WebBrowser-Fisher
+
+## 简介
+
+简单的Electron套壳web浏览器
+
 # 快捷键
 
 1. 前进 -> ctrl+enter
